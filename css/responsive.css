@@ -50,13 +50,6 @@
 
   /* 메인 2번째 섹션 (what we do) */
 
-  .sec2 .left_text {
-    width: 100%;
-    /* background-color: yellow; */
-  }
-  .right_image {
-    display: none;
-  }
   .left_text p + button {
     width: clamp(280px, 100%, 400px);
   }
@@ -133,10 +126,6 @@
   .con form > div > textarea {
     width: 100%;
   }
-  /* 임시로 안보이게 */
-  /* footer {
-    display: none;
-  } */
 }
 
 /* 작은 테블릿 ver */
@@ -163,9 +152,11 @@
   /* 메인 3번째 섹션 */
   .cards {
     justify-content: space-between;
+    gap: 40px;
   }
   .cards > div {
     width: 48%;
+    margin: 0 auto;
   }
   .img_area .floor {
     width: 100%;
@@ -173,10 +164,41 @@
     object-fit: scale-down;
     object-position: bottom;
   }
+  .right_image {
+    width: fit-content;
+  }
+}
+/* 메인 4번째 섹션 */
+.sec4 > .con > h2 + p br {
+  display: block;
+}
 
-  /* 메인 4번째 섹션 */
-  .sec4 > .con > h2 + p br {
-    display: block;
+@media screen and (max-width: 950px) {
+  .main_visual_text p {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .right_image {
+    display: none;
+  }
+  .left_text h3,
+  .left_text p,
+  .left_text p + button {
+    text-align: center;
+  }
+  .left_text h3::after {
+    margin: 0 auto;
+  }
+  .cards {
+    margin: 0 auto;
+  }
+  .sec2 > .con {
+    justify-content: center;
+  }
+  .cards > div:not(:last-of-type) {
+    margin-bottom: 70px;
   }
 }
 
@@ -194,24 +216,13 @@
   .main_visual_text {
     width: 600px;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
   }
   .main_visual_text h2 {
     font-size: 50px;
     border-bottom: 1px solid #fff;
-    color: #f50057;
-  }
-
-  /* 이미지 위치+애니메이션 */
-  .man {
-    transform: scale(0.6);
-    transform-origin: left;
-  }
-  .woman {
-    display: block;
-    transform: scale(0.7);
-    transform-origin: right;
+    color: #fff;
   }
 
   /* 메인 2번째 섹션 (what we do) */
@@ -222,6 +233,7 @@
     display: block;
     transform: scale(0.8);
     transform-origin: right;
+    width: fit-content;
   }
   .sec2 > .con {
     justify-content: space-around;

@@ -41,6 +41,7 @@
   .main_visual_text p {
     font-size: 4.7vw;
     line-height: 1.7;
+    margin-top: 20px;
   }
 
   /* 메인 2번째 섹션 (what we do) */
@@ -51,8 +52,9 @@
     width: clamp(280px, 100%, 400px);
   }
   .left_text p {
-    font-size: clamp(18px, 10vw, 20px);
-    line-height: 1.7;
+    font-size: clamp(18px, 10vw, 18px);
+    line-height: 1.5;
+    margin-top: 20px;
   }
 
   /* 메인 3번째 섹션 */
@@ -109,7 +111,7 @@
     font-weight: 700;
   }
   .form_left h2 + p {
-    font-size: clamp(18px, 10vw, 20px);
+    font-size: clamp(18px, 10vw, 18px);
   }
   .form_left h2 + p br {
     display: none;
@@ -153,8 +155,9 @@
     margin-bottom: 0px;
   }
   .main_visual_text p {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 1.5;
+    margin-top: 20px;
   }
 
   /* 메인 3번째 섹션 */
@@ -185,6 +188,7 @@
   .main_visual_text p {
     font-size: 3vw;
     line-height: 1.5;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 1000px) {

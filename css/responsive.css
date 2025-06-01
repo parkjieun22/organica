@@ -149,6 +149,8 @@
   }
   .main_visual_text h2 {
     font-size: clamp(32px, 10vw, 40px);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
   .main_visual_text p {
     font-size: 30px;
